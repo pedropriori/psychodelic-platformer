@@ -1,0 +1,181 @@
+/* Fade In Animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+/* Slide Up Animation */
+@keyframes slideUp {
+  from {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.slide-up {
+  opacity: 0;
+  animation: slideUp 1s ease forwards;
+}
+
+/* Slide Right Animation */
+@keyframes slideRight {
+  from {
+      opacity: 0;
+      transform: translateX(-50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+.slide-right {
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+}
+
+/* Slide Left Animation */
+@keyframes slideLeft {
+  from {
+      opacity: 0;
+      transform: translateX(50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+.slide-left {
+  opacity: 0;
+  animation: slideLeft 1s ease forwards;
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+      box-shadow: 0 4px 15px rgba(255, 62, 157, 0.4);
+  }
+  50% {
+      transform: scale(1.05);
+      box-shadow: 0 8px 25px rgba(255, 62, 157, 0.6);
+  }
+  100% {
+      transform: scale(1);
+      box-shadow: 0 4px 15px rgba(255, 62, 157, 0.4);
+  }
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+/* Scroll animations */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animate-on-scroll.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hover effect for image zoom */
+.zoom-on-hover {
+  transition: transform 0.5s ease;
+}
+
+.zoom-on-hover:hover {
+  transform: scale(1.05);
+}
+
+/* Mobile menu animation */
+.mobile-nav {
+  transform: translateY(-20px);
+  transition: opacity 0.3s ease, transform 0.3s ease, pointer-events 0.3s;
+}
+
+.mobile-nav.active {
+  transform: translateY(0);
+}
+
+/* Custom psychedelic effects */
+.psychedelic-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.psychedelic-bg::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+      to right,
+      #ff3e9d,
+      #6a11cb,
+      #2575fc,
+      #ff3e9d
+  );
+  animation: psychedelicBg 10s linear infinite;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+@keyframes psychedelicBg {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+/* Color shift animation */
+@keyframes colorShift {
+  0% {
+      filter: hue-rotate(0deg);
+  }
+  100% {
+      filter: hue-rotate(360deg);
+  }
+}
+
+.color-shift {
+  animation: colorShift 10s linear infinite;
+}
+
+/* Floating animation */
+@keyframes float {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-15px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+.float {
+  animation: float 5s ease-in-out infinite;
+}
