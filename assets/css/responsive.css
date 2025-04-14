@@ -1,0 +1,172 @@
+/* Tablet screens */
+@media screen and (max-width: 992px) {
+  h1 {
+      font-size: 3rem;
+  }
+  
+  h2 {
+      font-size: 2.2rem;
+  }
+  
+  h3 {
+      font-size: 1.5rem;
+  }
+  
+  /* Header */
+  .desktop-nav {
+      display: none;
+  }
+  
+  .mobile-menu-btn {
+      display: block;
+  }
+  
+  .mobile-nav {
+      display: block;
+  }
+  
+  /* Character Section */
+  .character-content {
+      flex-direction: column-reverse;
+      text-align: center;
+  }
+  
+  .character-text, .character-image {
+      width: 100%;
+      padding-right: 0;
+  }
+  
+  .character-image {
+      margin-bottom: 50px;
+  }
+  
+  .character-image img {
+      max-width: 70%;
+  }
+
+  .game-iframe {
+    width: 100%;
+    height: 40vh;
+  }
+  
+  /* Game Controls */
+  .game-controls {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .control-info {
+      margin-bottom: 30px;
+      text-align: center;
+  }
+}
+
+/* Mobile screens */
+@media screen and (max-width: 768px) {
+  h1 {
+      font-size: 2.5rem;
+  }
+  
+  h2 {
+      font-size: 2rem;
+  }
+  
+  /* Buttons */
+  .hero-buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .btn-learn-more {
+      margin-left: 0;
+      margin-top: 15px;
+  }
+  
+  /* Header */
+  .logo img {
+      height: 40px;
+  }
+  
+  header.scrolled .logo img {
+      height: 35px;
+  }
+  
+  /* Hero Section */
+  .hero {
+      height: 90vh;
+  }
+  
+  /* Game iframe */
+  .game-iframe {
+      height: 60vh;
+  }
+  
+  /* About page */
+  .story-image img {
+      max-height: 300px;
+  }
+  
+  /* Contact form */
+  .contact-form-container {
+      padding: 30px 20px;
+  }
+}
+
+/* Very small screens */
+@media screen and (max-width: 480px) {
+  h1 {
+      font-size: 2rem;
+  }
+  
+  h2 {
+      font-size: 1.8rem;
+  }
+  
+  h3 {
+      font-size: 1.3rem;
+  }
+  
+  /* Header */
+  .header-container {
+      padding: 0 10px;
+  }
+  
+  .logo img {
+      height: 35px;
+  }
+  
+  header.scrolled .logo img {
+      height: 30px;
+  }
+  
+  .play-btn {
+      display: none;
+  }
+  
+  /* Hero Section */
+  .hero-content {
+      padding: 0 10px;
+  }
+  
+  /* Character Section */
+  .character-image img {
+      max-width: 90%;
+  }
+  
+  /* Game iframe */
+  .game-iframe {
+      height: 20vh;
+  }
+
+  iframe {
+    width:420px;
+    height:260px;
+    border-radius:10px;
+}
+  
+  /* Footer */
+  .footer-logo img {
+      height: 50px;
+  }
+}
